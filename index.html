@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Saasflix HTML Landing Page</title>
+    <meta name="author" content="tansh" />
+    <meta name="description" content="HTML Teamplate" />
+    <meta name="keywords" content="webapp, app, software" />
+
+    <!-- FAVICON FILES -->
+    <link
+      href="images/apple-touch-icon-144-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="144x144"
+    />
+    <link
+      href="images/apple-touch-icon-120-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="120x120"
+    />
+    <link
+      href="images/apple-touch-icon-76-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="76x76"
+    />
+    <link href="images/favicon.png" rel="shortcut icon" />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/iconfonts.css" />
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/color.css" />
+  </head>
+  <body>
+    <div id="dtr-wrapper" class="clearfix">
+      <!-- preloader starts -->
+      <div class="dtr-preloader">
+        <div class="dtr-preloader-inner">
+          <div class="dtr-preloader-img"></div>
+        </div>
+      </div>
+      <!-- preloader ends -->
+
+      <!-- Small Devices Header 
+============================================= -->
+      <div class="dtr-responsive-header fixed-top">
+        <div class="container">
+          <!-- small devices logo -->
+          <a href="index.html"
+            ><img
+              src="images/cowallet-logo.png"
+              alt="logo"
+              style="width: 200px"
+          /></a>
+          <!-- small devices logo ends -->
+
+          <!-- menu button -->
+          <button id="dtr-menu-button" class="dtr-hamburger" type="button">
+            <span class="dtr-hamburger-lines-wrapper"
+              ><span class="dtr-hamburger-lines"></span
+            ></span>
+          </button>
+        </div>
+        <div class="dtr-responsive-header-menu"></div>
+      </div>
+      <!-- Small Devices Header ends 
+============================================= -->
+
+      <!-- Header 
+============================================= -->
+      <header id="dtr-header-global" class="fixed-top bg-white">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <!-- header left starts -->
+            <div class="dtr-header-left">
+              <!-- logo -->
+              <a class="logo-default dtr-scroll-link" href="#home"
+                ><img
+                  src="images/cowallet-logo.png"
+                  alt="logo"
+                  style="width: 200px"
+              /></a>
+
+              <!-- logo on scroll -->
+              <a class="logo-alt dtr-scroll-link" href="#home"
+                ><img
+                  src="images/cowallet-logo.png"
+                  alt="logo"
+                  style="width: 200px"
+              /></a>
+              <!-- logo on scroll ends -->
+            </div>
+            <!-- header left ends -->
+
+            <!-- menu starts-->
+            <div class="main-navigation navbar navbar-expand-lg ml-auto">
+              <ul
+                class="dtr-scrollspy navbar-nav dtr-nav dark-nav-on-load dark-nav-on-scroll"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#plans">Plans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- menu ends-->
+
+            <!-- header right starts -->
+            <div class="dtr-header-right">
+              <a
+                href="#plans"
+                class="dtr-btn btn-blue dtr-scroll-link dtr-px-50"
+                style="border-radius: 10px"
+                >Get Started</a
+              >
+            </div>
+            <!-- header right ends -->
+          </div>
+        </div>
+      </header>
+      <!-- header ends
+================================================== -->
+
+      <!-- == main content area starts == -->
+      <div id="dtr-main-content">
+        <!-- hero section starts
+================================================== -->
+        <section
+          id="home"
+          class="dtr-section dtr-section-with-bg"
+          style="background-image: url(images/background.png)"
+        >
+          <!-- overlay -->
+          <div class="dtr-overlay dtr-overlay-blue"></div>
+          <div class="container dtr-overlay-content hero-section-top-padding">
+            <!-- row starts -->
+            <div class="row d-flex align-items-center dtr-pt-100 dtr-pb-50">
+              <!-- column 1 starts -->
+              <div class="col-12 col-md-6">
+                <h1 class="color-white">
+                  Empower Your Contractor Journey With Our Cutting-Edge App
+                </h1>
+                <p class="text-size-md dtr-mt-30 color-white">
+                  Specifically designed for government contractors, our app
+                  enables you to effortlessly manage government contracts.
+                </p>
+                <p>
+                  <a
+                    href="#"
+                    class="dtr-btn btn-white dtr-scroll-link dtr-px-50 dtr-mt-20 dtr-mr-10"
+                    >Get Started</a
+                  >
+                  <a href="#" class="dtr-btn dtr-px-50 dtr-mt-20"
+                    >Request a demo</a
+                  >
+                </p>
+              </div>
+              <!-- column 1 ends -->
+
+              <!-- column 2 starts -->
+              <div class="col-12 col-md-6">
+                <img
+                  src="images/dashboard.png"
+                  alt="image"
+                  class="dtr-mb-minus50 animated-img"
+                />
+              </div>
+              <!-- column 2 ends -->
+            </div>
+            <!-- row ends -->
+          </div>
+          <div
+            class="dtr-section-with-bg hero-svg-bg-absolute"
+            style="
+              background-image: url(images/landing3-hero.svg);
+              width: 100%;
+              height: 200px;
+            "
+          ></div>
+        </section>
+        <!-- hero section ends
+================================================== -->
+
+        <!-- logo slider section starts
+================================================== -->
+        <section
+          class="dtr-section dtr-md-mx-20 dtr-border-bottom border-grey dtr-py-50"
+        >
+          <!-- row starts -->
+          <div class="row">
+            <div class="col-12">
+              <div class="dtr-slick-slider dtr-logo-carousel">
+                <!-- logo 1 -->
+                <div><img src="images/client-1.png" alt="image" /></div>
+                <!-- logo 2 -->
+                <div><img src="images/client-2.png" alt="image" /></div>
+                <!-- logo 3 -->
+                <div><img src="images/client-3.png" alt="image" /></div>
+                <!-- logo 4 -->
+                <div><img src="images/client-4.png" alt="image" /></div>
+                <!-- logo 5 -->
+                <div><img src="images/client-5.png" alt="image" /></div>
+                <!-- logo 6 -->
+                <div><img src="images/client-3.png" alt="image" /></div>
+              </div>
+            </div>
+          </div>
+          <!-- row ends -->
+        </section>
+        <!-- logo slider section ends
+================================================== -->
+
+        <!-- boxed feature section starts
+================================================== -->
+        <section
+          class="dtr-section dtr-pt-100 dtr-pb-70 dtr-section-with-bg bg-light-blue parallax"
+          style="background-image: url(images/section-bg1.png)"
+        >
+          <div class="container">
+            <!-- section intro row starts -->
+            <div class="row dtr-mb-50">
+              <div class="col-12 text-center">
+                <h2>Why CoWallet</h2>
+                <div
+                  class="dtr-styled-divider divider-center bg-light-green"
+                ></div>
+              </div>
+            </div>
+            <!-- section intro row ends -->
+            <!-- row starts -->
+            <div class="row">
+              <!-- column 1 starts -->
+              <div class="col-12 col-md">
+                <!-- feature starts -->
+                <div
+                  class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white"
+                >
+                  <div class="dtr-feature-img">
+                    <img src="images/project management.png" alt="image" />
+                  </div>
+                  <div class="dtr-feature-content">
+                    <!-- <h3>Saasflix</h3> -->
+                    <p class="text-size-lg">Manage all projects in one place</p>
+                    <!-- <p>
+                      There are many variations of passages of lorem ipsum dolor
+                      amet available.
+                    </p> -->
+                    <!-- <a
+                      href="#"
+                      class="dtr-styled-link font-weight-600 color-green"
+                      >Learn More</a
+                    > -->
+                  </div>
+                </div>
+                <!-- feature ends -->
+              </div>
+              <!-- column 1 ends -->
+
+              <!-- column 2 starts -->
+              <div class="col-12 col-md">
+                <!-- feature starts -->
+                <div
+                  class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white"
+                >
+                  <div class="dtr-feature-img">
+                    <img src="images/expense and income.png" alt="image" />
+                  </div>
+                  <div class="dtr-feature-content">
+                    <!-- <h3>Saasflix</h3> -->
+                    <p class="text-size-lg">Add expenses and income</p>
+                    <!-- <p>
+                      There are many variations of passages of lorem ipsum dolor
+                      amet available.
+                    </p> -->
+                    <!-- <a
+                      href="#"
+                      class="dtr-styled-link font-weight-600 color-green"
+                      >Learn More</a
+                    > -->
+                  </div>
+                </div>
+                <!-- feature ends -->
+              </div>
+              <!-- column 2 ends -->
+
+              <!-- column 3 starts -->
+              <div class="col-12 col-md">
+                <!-- feature starts -->
+                <div
+                  class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white"
+                >
+                  <div class="dtr-feature-img">
+                    <img src="images/worker and party.png" alt="image" />
+                  </div>
+                  <div class="dtr-feature-content">
+                    <!-- <h3>Saasflix</h3> -->
+                    <p class="text-size-lg">
+                      Know your workers and party Details
+                    </p>
+                    <!-- <p>
+                      There are many variations of passages of lorem ipsum dolor
+                      amet available.
+                    </p> -->
+                    <!-- <a
+                      href="#"
+                      class="dtr-styled-link font-weight-600 color-green"
+                      >Learn More</a
+                    > -->
+                  </div>
+                </div>
+                <!-- feature ends -->
+              </div>
+              <!-- column 3 ends -->
+
+              <!-- column 3 starts -->
+              <div class="col-12 col-md">
+                <!-- feature starts -->
+                <div
+                  class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white"
+                >
+                  <div class="dtr-feature-img">
+                    <img src="images/get reports.png" alt="image" />
+                  </div>
+                  <div class="dtr-feature-content">
+                    <!-- <h3>Saasflix</h3> -->
+                    <p class="text-size-lg">Get your reports in seconds</p>
+                    <!-- <p>
+                      There are many variations of passages of lorem ipsum dolor
+                      amet available.
+                    </p> -->
+                    <!-- <a
+                      href="#"
+                      class="dtr-styled-link font-weight-600 color-green"
+                      >Learn More</a
+                    > -->
+                  </div>
+                </div>
+                <!-- feature ends -->
+              </div>
+              <!-- column 3 ends -->
+            </div>
+            <!-- row ends -->
+          </div>
+        </section>
+        <!-- boxed feature section ends
+================================================== -->
+
+        <section class="dtr-section dtr-py-100">
+          <div class="container">
+            <!-- section intro row starts -->
+            <div class="row dtr-mb-50">
+              <div class="col-12 text-center">
+                <h2>Our Features</h2>
+                <div
+                  class="dtr-styled-divider divider-center bg-light-green"
+                ></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4 features-left">
+                <div class="col-sm-12 wow fadeInUp pb-5">
+                  <div class="icon">
+                    <img src="images/favicon.png" alt="Icon" />
+                  </div>
+                  <div class="feature-single">
+                    <h3>Manage Projects</h3>
+                    <p>
+                      Some lorem contetnt to fill the gap and make it look clean
+                      and organized.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-12 wow fadeInUp pb-5">
+                  <div class="icon">
+                    <img src="images/favicon.png" alt="Icon" />
+                  </div>
+                  <div class="feature-single">
+                    <h3>Add Expenses</h3>
+                    <p>
+                      Some lorem contetnt to fill the gap and make it look clean
+                      and organized.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-12 wow fadeInUp pb-5">
+                  <div class="icon">
+                    <img src="images/favicon.png" alt="Icon" />
+                  </div>
+                  <div class="feature-single">
+                    <h3>Get Reports</h3>
+                    <p>
+                      Some lorem contetnt to fill the gap and make it look clean
+                      and organized.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-lg-4 wow fadeInUp pb-5">
+                <img
+                  class="img-fluid features-img"
+                  src="images/mobile-view.png"
+                  alt="App"
+                />
+              </div>
+
+              <div class="col-md-6 col-lg-4 features-left2">
+                <div class="col-sm-12 wow fadeInUp pb-5">
+                  <div class="icon">
+                    <img src="images/favicon.png" alt="Icon" />
+                  </div>
+                  <div class="feature-single">
+                    <h3>Manage Projects</h3>
+                    <p>
+                      Some lorem contetnt to fill the gap and make it look clean
+                      and organized.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-12 wow fadeInUp pb-5">
+                  <div class="icon">
+                    <img src="images/favicon.png" alt="Icon" />
+                  </div>
+                  <div class="feature-single">
+                    <h3>Add Expenses</h3>
+                    <p>
+                      Some lorem contetnt to fill the gap and make it look clean
+                      and organized.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-12 wow fadeInUp pb-5">
+                  <div class="icon">
+                    <img src="images/favicon.png" alt="Icon" />
+                  </div>
+                  <div class="feature-single">
+                    <h3>Get Reports</h3>
+                    <p>
+                      Some lorem contetnt to fill the gap and make it look clean
+                      and organized.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- team section starts
+================================================== -->
+        <section
+          class="dtr-section dtr-py-100 bg-light-blue parallax"
+          style="background-image: url(images/section-bg1.png)"
+        >
+          <div class="container">
+            <!-- section intro row starts -->
+            <div class="row dtr-mb-50">
+              <div class="col-12 text-center">
+                <h2>Explore More Features</h2>
+                <div
+                  class="dtr-styled-divider divider-center bg-light-green"
+                ></div>
+              </div>
+            </div>
+            <!-- section intro row ends -->
+
+            <!-- row starts -->
+            <div class="row">
+              <!-- column 1 starts -->
+              <div class="col-12 col-md">
+                <!-- member 1 starts -->
+                <div class="dtr-team team-has-shadow text-center bg-white">
+                  <div class="dtr-team-img">
+                    <img src="images/project.png" alt="image" />
+                  </div>
+                  <div class="dtr-team-content">
+                    <p>Project Management</p>
+                  </div>
+                </div>
+                <!-- member 1 ends -->
+              </div>
+              <!-- column 1 ends -->
+
+              <!-- column 2 starts -->
+              <div class="col-12 col-md">
+                <!-- member 2 starts -->
+                <div class="dtr-team team-has-shadow text-center bg-white">
+                  <div class="dtr-team-img">
+                    <img src="images/work.png" alt="image" />
+                  </div>
+                  <div class="dtr-team-content">
+                    <p>Work Management</p>
+                  </div>
+                </div>
+                <!-- member 2 ends -->
+              </div>
+              <!-- column 2 ends -->
+
+              <!-- column 3 starts -->
+              <div class="col-12 col-md">
+                <!-- member 3 starts -->
+                <div class="dtr-team team-has-shadow text-center bg-white">
+                  <div class="dtr-team-img">
+                    <img src="images/supervisor.png" alt="image" />
+                  </div>
+                  <div class="dtr-team-content">
+                    <p>Supervisor Management</p>
+                  </div>
+                </div>
+                <!-- member 3 ends -->
+              </div>
+              <!-- column 3 ends -->
+
+              <!-- column 3 starts -->
+              <div class="col-12 col-md">
+                <!-- member 3 starts -->
+                <div class="dtr-team team-has-shadow text-center bg-white">
+                  <div class="dtr-team-img">
+                    <img src="images/work&party.png" alt="image" />
+                  </div>
+                  <div class="dtr-team-content">
+                    <p>Works and Party Management</p>
+                  </div>
+                </div>
+                <!-- member 3 ends -->
+              </div>
+              <!-- column 3 ends -->
+            </div>
+            <!-- row ends -->
+          </div>
+        </section>
+        <!-- team section ends
+================================================== -->
+
+        <!-- tabs section starts
+================================================== -->
+        <section class="dtr-section dtr-py-100">
+          <div class="container">
+            <!-- section intro row starts -->
+            <div class="row dtr-mb-30">
+              <div class="col-12 text-center">
+                <h2>How it works?</h2>
+                <p>Just 3 simple steps to start using Saasflix.</p>
+                <div
+                  class="dtr-styled-divider divider-center bg-light-green"
+                ></div>
+              </div>
+            </div>
+            <!-- section intro row ends -->
+
+            <!-- tabs starts -->
+            <div class="row d-flex align-items-center dtr-features-tab">
+              <!-- left column starts -->
+              <div class="col-12 col-md-6">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <!-- tab 1 -->
+                  <div
+                    class="tab-pane fade"
+                    id="features-tab-1"
+                    role="tabpanel"
+                    aria-labelledby="features-tab-1-tab"
+                  >
+                    <img src="images/screen-1.png" alt="image" />
+                  </div>
+                  <!-- tab 2 -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="features-tab-2"
+                    role="tabpanel"
+                    aria-labelledby="features-tab-2-tab"
+                  >
+                    <img src="images/screen-2.png" alt="image" />
+                  </div>
+                  <!-- tab 3 -->
+                  <div
+                    class="tab-pane fade"
+                    id="features-tab-3"
+                    role="tabpanel"
+                    aria-labelledby="features-tab-3-tab"
+                  >
+                    <img src="images/screen-3.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <!-- left column ends -->
+
+              <!-- right (nav) column starts -->
+              <div class="col-12 col-md-6">
+                <div
+                  class="nav flex-column nav-pills"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <!-- tab 1 content starts -->
+                  <a
+                    class="nav-link"
+                    id="features-tab-1-tab"
+                    data-toggle="pill"
+                    href="#features-tab-1"
+                    role="tab"
+                    aria-controls="features-tab-1"
+                    aria-selected="false"
+                  >
+                    <h4 class="font-weight-600">Create your tasks</h4>
+                    <p>
+                      There are many variations of passages of lorem ipsum dolor
+                      amet available.
+                    </p>
+                  </a>
+                  <!-- tab 1 content ends -->
+
+                  <!-- tab 2 content starts -->
+                  <a
+                    class="nav-link active"
+                    id="features-tab-2-tab"
+                    data-toggle="pill"
+                    href="#features-tab-2"
+                    role="tab"
+                    aria-controls="features-tab-2"
+                    aria-selected="true"
+                  >
+                    <h4 class="font-weight-600">Build your flow</h4>
+                    <p>
+                      There are many variations of passages of lorem ipsum dolor
+                      amet available.
+                    </p>
+                  </a>
+                  <!-- tab 2 content ends -->
+
+                  <!-- tab 3 content starts -->
+                  <a
+                    class="nav-link"
+                    id="features-tab-3-tab"
+                    data-toggle="pill"
+                    href="#features-tab-3"
+                    role="tab"
+                    aria-controls="features-tab-3"
+                    aria-selected="false"
+                  >
+                    <h4 class="font-weight-600">Aquire new users</h4>
+                    <p>
+                      There are many variations of passages of lorem ipsum dolor
+                      amet available.
+                    </p>
+                  </a>
+                  <!-- tab 3 content ends -->
+                </div>
+              </div>
+              <!-- right (nav) column ends -->
+            </div>
+            <!-- tabs starts -->
+          </div>
+        </section>
+        <!-- tabs section ends
+================================================== -->
+
+        <!-- faq section starts
+================================================== -->
+        <section id="faq" class="dtr-section dtr-py-100">
+          <div class="container">
+            <!-- row 2 starts -->
+            <div
+              class="dtr-cta-box dtr-rounded-corner-xl dtr-shadow dtr-mt-50 bg-white"
+            >
+              <div class="row d-flex">
+                <!-- column 1 starts -->
+                <div class="col-12 col-md-5 align-self-end">
+                  <img src="images/footer3d.png" alt="image" />
+                </div>
+                <!-- column 1 ends -->
+                <!-- column 2 starts -->
+                <div class="col-12 col-md-7 text-center dtr-py-50 dtr-px-60">
+                  <h3 class="color-blue">Get started with CoWallet</h3>
+                  <p class="text-size-md">
+                    If you have any questions or enquiries,<br />
+                    Our consultants will assist you.
+                  </p>
+                  <a href="#" class="dtr-btn btn-blue dtr-mt-20">Book a demo</a>
+                </div>
+                <!-- column 2 ends -->
+              </div>
+            </div>
+            <!-- row 2 ends -->
+          </div>
+        </section>
+        <!-- faq section ends
+================================================== -->
+
+        <!-- footer section starts
+================================================== -->
+        <footer
+          id="dtr-footer"
+          class="dtr-section-with-bg"
+          style="background-image: url(images/footer-bg.png)"
+        >
+          <div class="container">
+            <div class="row">
+              <!-- column 1 starts -->
+              <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
+                <a href="index.html" class="d-block dtr-mb-15"
+                  ><img
+                    src="images/cowallet-logo.png"
+                    alt="logo"
+                    style="width: 200px"
+                /></a>
+                <p>AJ Future Development LLP,</p>
+                <p>Malappuram, Kerala</p>
+                &copy;
+                <span id="copyright">
+                  <script>
+                    document
+                      .getElementById("copyright")
+                      .appendChild(
+                        document.createTextNode(new Date().getFullYear())
+                      );
+                  </script>
+                </span>
+                <a href="https://ajfuture.in/" target="_blank">AJ Future</a>
+                Developement LLP
+              </div>
+              <!-- column 1 ends -->
+
+              <!-- column 2 starts -->
+              <div class="col-12 col-sm-6 col-lg-2 dtr-mb-30">
+                <h4 class="color-green">Company</h4>
+                <ul class="dtr-list-simple">
+                  <li><a href="#" class="dtr-styled-link">Features</a></li>
+                  <li><a href="#" class="dtr-styled-link">Plan</a></li>
+                  <li><a href="#" class="dtr-styled-link">Blog</a></li>
+                  <li><a href="#" class="dtr-styled-link">Contact</a></li>
+                </ul>
+              </div>
+              <!-- column 2 ends -->
+
+              <!-- column 3 starts -->
+              <div class="col-12 col-sm-6 col-lg-2 dtr-mb-30">
+                <h4 class="color-green">Support</h4>
+                <ul class="dtr-list-simple">
+                  <li><a href="#" class="dtr-styled-link">Careers</a></li>
+                  <li><a href="#" class="dtr-styled-link">Help</a></li>
+                  <li>
+                    <a href="#" class="dtr-styled-link">Privacy Policy</a>
+                  </li>
+                  <li><a href="#" class="dtr-styled-link">Terms</a></li>
+                </ul>
+              </div>
+              <!-- column 3 ends -->
+
+              <!-- column 4 starts -->
+              <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
+                <h4 class="color-green">Newsletter</h4>
+                <div class="dtr-form dtr-form-has-icon dtr-form-no-gap">
+                  <form id="subscribeform" method="post" action="#">
+                    <fieldset>
+                      <div class="dtr-form-row-2col">
+                        <p class="dtr-input dtr-form-column">
+                          <i class="icon-envelope1 color-dark-blue"></i>
+                          <input
+                            name="email"
+                            class="required email"
+                            type="text"
+                            placeholder="Email address"
+                          />
+                        </p>
+                        <p class="dtr-form-column">
+                          <button class="dtr-btn btn-green" type="submit">
+                            Subscribe
+                          </button>
+                        </p>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="dtr-social-large">
+                  <ul
+                    class="dtr-social dtr-social-list color-white-muted-alt accent-color-hover text-center"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="dtr-twitter"
+                        target="_blank"
+                        title="twitter"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="dtr-facebook"
+                        target="_blank"
+                        title="facebook"
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- column 4 ends -->
+            </div>
+          </div>
+        </footer>
+        <!-- footer section ends
+================================================== -->
+      </div>
+      <!-- == main content area ends == -->
+    </div>
+    <!-- #dtr-wrapper ends -->
+
+    <!-- JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
