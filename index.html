@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
-    <title>Saasflix HTML Landing Page</title>
+    <title>CoWallet</title>
     <meta name="author" content="tansh" />
     <meta name="description" content="HTML Teamplate" />
     <meta name="keywords" content="webapp, app, software" />
@@ -25,7 +25,7 @@
       rel="apple-touch-icon"
       sizes="76x76"
     />
-    <link href="images/favicon.png" rel="shortcut icon" />
+    <link href="images/icon.png" rel="shortcut icon" />
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -363,9 +363,8 @@
         <!-- boxed feature section ends
 ================================================== -->
 
-        <section class="dtr-section dtr-py-100">
+        <section id="features" class="dtr-section app-features dtr-py-100">
           <div class="container">
-            <!-- section intro row starts -->
             <div class="row dtr-mb-50">
               <div class="col-12 text-center">
                 <h2>Our Features</h2>
@@ -375,46 +374,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 col-lg-4 features-left">
-                <div class="col-sm-12 wow fadeInUp pb-5">
-                  <div class="icon">
-                    <img src="images/favicon.png" alt="Icon" />
-                  </div>
-                  <div class="feature-single">
-                    <h3>Manage Projects</h3>
-                    <p>
-                      Some lorem contetnt to fill the gap and make it look clean
-                      and organized.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-12 wow fadeInUp pb-5">
-                  <div class="icon">
-                    <img src="images/favicon.png" alt="Icon" />
-                  </div>
-                  <div class="feature-single">
-                    <h3>Add Expenses</h3>
-                    <p>
-                      Some lorem contetnt to fill the gap and make it look clean
-                      and organized.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-12 wow fadeInUp pb-5">
-                  <div class="icon">
-                    <img src="images/favicon.png" alt="Icon" />
-                  </div>
-                  <div class="feature-single">
-                    <h3>Get Reports</h3>
-                    <p>
-                      Some lorem contetnt to fill the gap and make it look clean
-                      and organized.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-12 col-lg-4 wow fadeInUp pb-5">
+              <div class="col-md-12 col-lg-4 wow fadeInUp">
                 <img
                   class="img-fluid features-img"
                   src="images/mobile-view.png"
@@ -422,40 +382,79 @@
                 />
               </div>
 
-              <div class="col-md-6 col-lg-4 features-left2">
-                <div class="col-sm-12 wow fadeInUp pb-5">
+              <div class="col-md-6 col-lg-4 features-left">
+                <div class="col-sm-12 wow fadeInUp">
                   <div class="icon">
-                    <img src="images/favicon.png" alt="Icon" />
+                    <img src="images/ft-project.png" alt="Icon" />
                   </div>
                   <div class="feature-single">
-                    <h3>Manage Projects</h3>
+                    <h1>Manage Projects</h1>
                     <p>
-                      Some lorem contetnt to fill the gap and make it look clean
-                      and organized.
+                      Effortlessly oversee and navigate through all your
+                      projects in one centralized dashboard.
                     </p>
                   </div>
                 </div>
-                <div class="col-sm-12 wow fadeInUp pb-5">
+                <div class="col-sm-12 wow fadeInUp">
                   <div class="icon">
-                    <img src="images/favicon.png" alt="Icon" />
+                    <img src="images/ft-worker.png" alt="Icon" />
                   </div>
                   <div class="feature-single">
-                    <h3>Add Expenses</h3>
+                    <h1>Manage Workers</h1>
                     <p>
-                      Some lorem contetnt to fill the gap and make it look clean
-                      and organized.
+                      Transform Financial Management with Contractor Wallet.
+                      Your solution to hassle-free worker finances!
                     </p>
                   </div>
                 </div>
-                <div class="col-sm-12 wow fadeInUp pb-5">
+                <div class="col-sm-12 wow fadeInUp">
                   <div class="icon">
-                    <img src="images/favicon.png" alt="Icon" />
+                    <img src="images/ft-tool.png" alt="Icon" />
                   </div>
                   <div class="feature-single">
-                    <h3>Get Reports</h3>
+                    <h1>Manage Tools</h1>
                     <p>
-                      Some lorem contetnt to fill the gap and make it look clean
-                      and organized.
+                      Instantly locate tools and equipment, eliminating
+                      downtime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 features-left left-2">
+                <div class="col-sm-12 wow fadeInUp">
+                  <div class="icon">
+                    <img src="images/ft-supervisor.png" alt="Icon" />
+                  </div>
+                  <div class="feature-single">
+                    <h1>Supervisor Login</h1>
+                    <p>
+                      Add expenses on the go, Stay in control by monitoring
+                      on-site transactions in real-time.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-12 wow fadeInUp">
+                  <div class="icon">
+                    <img src="images/ft-expense.png" alt="Icon" />
+                  </div>
+                  <div class="feature-single">
+                    <h1>Add Expenses</h1>
+                    <p>
+                      Stay on top of costs with instant updates on
+                      project-related expenditures.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-12 wow fadeInUp">
+                  <div class="icon">
+                    <img src="images/ft-report.png" alt="Icon" />
+                  </div>
+                  <div class="feature-single">
+                    <h1>Get Reports</h1>
+                    <p>
+                      Simplify your workflow – all your reports, just one click
+                      away!
                     </p>
                   </div>
                 </div>
@@ -489,10 +488,13 @@
                 <!-- member 1 starts -->
                 <div class="dtr-team team-has-shadow text-center bg-white">
                   <div class="dtr-team-img">
-                    <img src="images/project.png" alt="image" />
+                    <img src="images/project.jpg" alt="image" />
                   </div>
                   <div class="dtr-team-content">
-                    <p>Project Management</p>
+                    <p>
+                      Project <br />
+                      Management
+                    </p>
                   </div>
                 </div>
                 <!-- member 1 ends -->
@@ -504,10 +506,13 @@
                 <!-- member 2 starts -->
                 <div class="dtr-team team-has-shadow text-center bg-white">
                   <div class="dtr-team-img">
-                    <img src="images/work.png" alt="image" />
+                    <img src="images/worker.jpg" alt="image" />
                   </div>
                   <div class="dtr-team-content">
-                    <p>Work Management</p>
+                    <p>
+                      Worker <br />
+                      Management
+                    </p>
                   </div>
                 </div>
                 <!-- member 2 ends -->
@@ -534,10 +539,13 @@
                 <!-- member 3 starts -->
                 <div class="dtr-team team-has-shadow text-center bg-white">
                   <div class="dtr-team-img">
-                    <img src="images/work&party.png" alt="image" />
+                    <img src="images/worker.jpg" alt="image" />
                   </div>
                   <div class="dtr-team-content">
-                    <p>Works and Party Management</p>
+                    <p>
+                      Party <br />
+                      Management
+                    </p>
                   </div>
                 </div>
                 <!-- member 3 ends -->
@@ -674,13 +682,13 @@
 
         <!-- faq section starts
 ================================================== -->
-        <section id="faq" class="dtr-section dtr-py-100">
+        <section id="contact" class="dtr-section dtr-py-100">
           <div class="container">
             <!-- row 2 starts -->
             <div
               class="dtr-cta-box dtr-rounded-corner-xl dtr-shadow dtr-mt-50 bg-white"
             >
-              <div class="row d-flex">
+              <div class="row d-flex cta">
                 <!-- column 1 starts -->
                 <div class="col-12 col-md-5 align-self-end">
                   <img src="images/footer3d.png" alt="image" />

@@ -24,6 +24,7 @@
 /*----- 1 Generate Google Fonts  -----*/
 /*----------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /*----------------------------------------*/
 /*----- 2 General Styles -----*/
@@ -68,7 +69,7 @@ p:last-child {
 /*----- 3 Font Settings -----*/
 /*----------------------------------------*/
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6em;
@@ -81,7 +82,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     letter-spacing: -0.5px;
 }
@@ -1347,7 +1348,7 @@ ul li {
 .dtr-btn-flat,
 input[type="submit"],
 input[type="reset"] {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: auto;
     height: auto;
     position: relative;
@@ -1631,7 +1632,7 @@ input[type="reset"] {
 }
 
 .dtr-nav.navbar-nav .nav-link {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: 600;
@@ -3477,4 +3478,103 @@ input[type="search"],
     -o-transition: all .3s linear;
     -ms-transition: all .3s linear;
     transition: all .3s linear;
+}
+
+/*----------------------------------------*/
+/*----- Our Features Section -----*/
+/*----------------------------------------*/
+
+.app-features {
+	background: #f8faff;
+	padding: 100px 0 100px 0;
+	overflow-x: hidden;
+}
+
+.app-features h1 {
+	font-size: 24px;
+  font-weight: 700;
+  color: #364655;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.app-features p {
+	font-size: 14px;
+  font-weight: 500;
+  color: rgb(129, 129, 152);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-features .features-img {
+	 margin: 0 auto;
+	 margin-top: 150px;
+}
+
+.app-features .features-left, .app-features .features-left2 {
+	padding: 50px 0 0 0;
+}
+
+.app-features .features-left div, .app-features .features-left2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+
+
+.app-features .icon {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.app-features .icon img {
+	width: 100px;
+	margin-top: 25px;
+}
+
+
+.app-features .feature-single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-left: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+
+.app-features .feature-single h1 {
+	font-size: 21px;
+	font-weight: 500;
+	color: #364655;
+	margin: 0 0 10px 0;
+	letter-spacing: 0;
+}
+
+.app-features .feature-single p {
+    text-align: center;
+	font-size: 14px;
+	color: rgb(129, 129, 152);
+	line-height: 1.4;
+	max-width: 276px;
+	margin: 0 auto !important;
+	margin: 10px 0 0 0;
+}
+
+@media only screen and (min-width: 801px) {
+	.app-features .col-md-12 {
+		order: 1;
+	}
+	.app-features .left-2 {
+		order: 2;
+	}
+}
+
+.cta {
+    padding: 0 100px;
 }
