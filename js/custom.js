@@ -135,6 +135,52 @@ $(document).ready(function () {
   }
   responsiveAnchor();
 
+  // feature slider
+  $(".dtr-feature-style1").slick({
+    centerMode: true,
+    centerPadding: "150px",
+    slidesToShow: 5,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          centerPadding: "90px",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1160,
+        settings: {
+          centerMode: true,
+          centerPadding: "30px",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          centerMode: true,
+          centerPadding: "30px",
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          centerMode: true,
+          centerPadding: "30px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   // testimonial slider
   $(".dtr-testimonial-style1").slick({
     centerMode: true,

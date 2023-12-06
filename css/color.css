@@ -51,6 +51,14 @@ a:hover {
     background-color: #1cb184 !important;
 }
 
+.bg-violet {
+    background-color: #684CF6 !important;
+}
+
+.bg-light-violet {
+    background-color: #b1a5ed !important;
+}
+
 .bg-light-green {
     background-color: #b6e4d5 !important;
 }
@@ -209,7 +217,7 @@ input[type="submit"] {
 .btn-white {
     background-color: #fff;
     border-color: #fff;
-    color: #0da574;
+    color: #684CF6;
 }
 
 .btn-flat-white {
@@ -890,11 +898,11 @@ input[type="search"]:focus {
 
 /*===== faq =====*/
 .faq-heading:before {
-    color: #0da574;
+    color: #684cf6ce;
 }
 
 .faq-content:before {
-    background-color: #b6e4d5;
+    background-color: #684cf66f;
 }
 
 /*===== divider =====*/
