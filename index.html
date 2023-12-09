@@ -1,929 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="format-detection" content="telephone=no" />
-    <title>CoWallet</title>
-    <meta name="author" content="tansh" />
-    <meta name="description" content="HTML Teamplate" />
-    <meta name="keywords" content="webapp, app, software" />
 
-    <!-- FAVICON FILES -->
-    <link
-      href="images/apple-touch-icon-144-precomposed.png"
-      rel="apple-touch-icon"
-      sizes="144x144"
-    />
-    <link
-      href="images/apple-touch-icon-120-precomposed.png"
-      rel="apple-touch-icon"
-      sizes="120x120"
-    />
-    <link
-      href="images/apple-touch-icon-76-precomposed.png"
-      rel="apple-touch-icon"
-      sizes="76x76"
-    />
-    <link href="images/icon.png" rel="shortcut icon" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>CoWallet</title>
+  <meta name="author" content="tansh" />
+  <meta name="description" content="HTML Teamplate" />
+  <meta name="keywords" content="webapp, app, software" />
 
-    <!-- CSS FILES -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/iconfonts.css" />
-    <link rel="stylesheet" href="css/plugins.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/color.css" />
-  </head>
-  <body>
-    <div id="dtr-wrapper" class="clearfix">
-      <!-- preloader starts -->
-      <div class="dtr-preloader">
-        <div class="dtr-preloader-inner">
-          <div class="dtr-preloader-img"></div>
+  <!-- FAVICON FILES -->
+  <link href="images/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144" />
+  <link href="images/apple-touch-icon-120-precomposed.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="images/apple-touch-icon-76-precomposed.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="images/icon.png" rel="shortcut icon" />
+
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/iconfonts.css" />
+  <link rel="stylesheet" href="css/plugins.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/color.css" />
+</head>
+
+<body>
+  <div id="dtr-wrapper" class="clearfix">
+    <!-- preloader starts -->
+    <!-- <div class="dtr-preloader">
+      <div class="dtr-preloader-inner">
+        <div class="dtr-preloader-img"></div>
+      </div>
+    </div> -->
+    <!-- preloader ends -->
+
+    <!-- Small Devices Header 
+============================================= -->
+    <div class="dtr-responsive-header fixed-top">
+      <div class="container">
+        <!-- small devices logo -->
+        <a href="index.html"><img src="images/cowallet-logo.png" alt="logo" style="width: 200px" /></a>
+        <!-- small devices logo ends -->
+
+        <!-- menu button -->
+        <button id="dtr-menu-button" class="dtr-hamburger" type="button">
+          <span class="dtr-hamburger-lines-wrapper"><span class="dtr-hamburger-lines"></span></span>
+        </button>
+      </div>
+      <div class="dtr-responsive-header-menu"></div>
+    </div>
+    <!-- Small Devices Header ends 
+============================================= -->
+
+    <!-- Header 
+============================================= -->
+    <header id="dtr-header-global" class="fixed-top bg-white">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- header left starts -->
+          <div class="dtr-header-left">
+            <!-- logo -->
+            <a class="logo-default dtr-scroll-link" href="#home"><img src="images/cowallet-logo.png" alt="logo"
+                style="width: 200px" /></a>
+
+            <!-- logo on scroll -->
+            <a class="logo-alt dtr-scroll-link" href="#home"><img src="images/cowallet-logo.png" alt="logo"
+                style="width: 200px" /></a>
+            <!-- logo on scroll ends -->
+          </div>
+          <!-- header left ends -->
+
+          <!-- menu starts-->
+          <div class="main-navigation navbar navbar-expand-lg ml-auto">
+            <ul class="dtr-scrollspy navbar-nav dtr-nav dark-nav-on-load dark-nav-on-scroll">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#plans">Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- menu ends-->
+
+          <!-- header right starts -->
+          <div class="dtr-header-right">
+            <a href="/login" class="dtr-btn btn-blue dtr-scroll-link dtr-px-50" style="border-radius: 10px">Get
+              Started</a>
+          </div>
+          <!-- header right ends -->
         </div>
       </div>
-      <!-- preloader ends -->
-
-      <!-- Small Devices Header 
-============================================= -->
-      <div class="dtr-responsive-header fixed-top">
-        <div class="container">
-          <!-- small devices logo -->
-          <a href="index.html"
-            ><img
-              src="images/cowallet-logo.png"
-              alt="logo"
-              style="width: 200px"
-          /></a>
-          <!-- small devices logo ends -->
-
-          <!-- menu button -->
-          <button id="dtr-menu-button" class="dtr-hamburger" type="button">
-            <span class="dtr-hamburger-lines-wrapper"
-              ><span class="dtr-hamburger-lines"></span
-            ></span>
-          </button>
-        </div>
-        <div class="dtr-responsive-header-menu"></div>
-      </div>
-      <!-- Small Devices Header ends 
-============================================= -->
-
-      <!-- Header 
-============================================= -->
-      <header id="dtr-header-global" class="fixed-top bg-white">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between">
-            <!-- header left starts -->
-            <div class="dtr-header-left">
-              <!-- logo -->
-              <a class="logo-default dtr-scroll-link" href="#home"
-                ><img
-                  src="images/cowallet-logo.png"
-                  alt="logo"
-                  style="width: 200px"
-              /></a>
-
-              <!-- logo on scroll -->
-              <a class="logo-alt dtr-scroll-link" href="#home"
-                ><img
-                  src="images/cowallet-logo.png"
-                  alt="logo"
-                  style="width: 200px"
-              /></a>
-              <!-- logo on scroll ends -->
-            </div>
-            <!-- header left ends -->
-
-            <!-- menu starts-->
-            <div class="main-navigation navbar navbar-expand-lg ml-auto">
-              <ul
-                class="dtr-scrollspy navbar-nav dtr-nav dark-nav-on-load dark-nav-on-scroll"
-              >
-                <li class="nav-item">
-                  <a class="nav-link active" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#features">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#plans">Plans</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#faq">FAQ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#blog">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <!-- menu ends-->
-
-            <!-- header right starts -->
-            <div class="dtr-header-right">
-              <a
-                href="tel:+917907707474"
-                class="dtr-btn btn-blue dtr-scroll-link dtr-px-50"
-                style="border-radius: 10px"
-                >Get Started</a
-              >
-            </div>
-            <!-- header right ends -->
-          </div>
-        </div>
-      </header>
-      <!-- header ends
+    </header>
+    <!-- header ends
 ================================================== -->
 
-      <!-- == main content area starts == -->
-      <div id="dtr-main-content">
-        <!-- hero section starts
+    <!-- == main content area starts == -->
+    <div id="dtr-main-content">
+      <!-- hero section starts
 ================================================== -->
-        <section
-          id="home"
-          class="dtr-section dtr-section-with-bg"
-          style="background-image: url(images/background.png)"
-        >
-          <!-- overlay -->
-          <div class="dtr-overlay dtr-overlay-blue"></div>
-          <div class="container dtr-overlay-content hero-section-top-padding">
-            <!-- row starts -->
-            <div class="row d-flex align-items-center dtr-pt-100 dtr-pb-50">
-              <!-- column 1 starts -->
-              <div class="col-12 col-md-6">
-                <h1 class="color-white">
-                  Empower Your Contractor Journey With Our Cutting-Edge App
-                </h1>
-                <p class="text-size-md dtr-mt-30 color-white">
-                  Specifically designed for government contractors, our app
-                  enables you to effortlessly manage government contracts.
-                </p>
-                <p>
-                  <a
-                    href="tel:+917907707474"
-                    class="dtr-btn btn-white dtr-scroll-link dtr-px-50 dtr-mt-20 dtr-mr-10"
-                    >Get Started</a
-                  >
-                  <a
-                    href="https://wa.me/917907707474"
-                    target="_blank"
-                    class="dtr-btn dtr-px-50 dtr-mt-20"
-                    >Request a demo</a
-                  >
-                </p>
-              </div>
-              <!-- column 1 ends -->
-
-              <!-- column 2 starts -->
-              <div class="col-12 col-md-6">
-                <img
-                  src="images/dashboard.png"
-                  alt="image"
-                  class="dtr-mb-minus50 animated-img"
-                />
-              </div>
-              <!-- column 2 ends -->
+      <section id="home" class="dtr-section dtr-section-with-bg" style="background-image: url(images/background.png)">
+        <!-- overlay -->
+        <div class="dtr-overlay dtr-overlay-blue"></div>
+        <div class="container dtr-overlay-content hero-section-top-padding">
+          <!-- row starts -->
+          <div class="row d-flex align-items-center dtr-pt-100 dtr-pb-50">
+            <!-- column 1 starts -->
+            <div class="col-12 col-md-6">
+              <h1 class="color-white">
+                Empower Your Contractor Journey With Our Cutting-Edge App
+              </h1>
+              <p class="text-size-md dtr-mt-30 color-white">
+                Specifically designed for government contractors, our app
+                enables you to effortlessly manage government contracts.
+              </p>
+              <p>
+                <a href="tel:+917907707474" class="dtr-btn btn-white dtr-scroll-link dtr-px-50 dtr-mt-20 dtr-mr-10">Get
+                  Started</a>
+                <a href="https://wa.me/917907707474" target="_blank" class="dtr-btn dtr-px-50 dtr-mt-20">Request a
+                  demo</a>
+              </p>
             </div>
-            <!-- row ends -->
+            <!-- column 1 ends -->
+
+            <!-- column 2 starts -->
+            <div class="col-12 col-md-6">
+              <img src="images/dashboard.png" alt="image" class="dtr-mb-minus50 animated-img" />
+            </div>
+            <!-- column 2 ends -->
           </div>
-          <div
-            class="dtr-section-with-bg hero-svg-bg-absolute"
-            style="
+          <!-- row ends -->
+        </div>
+        <div class="dtr-section-with-bg hero-svg-bg-absolute" style="
               background-image: url(images/landing3-hero.svg);
               width: 100%;
               height: 200px;
-            "
-          ></div>
-        </section>
-        <!-- hero section ends
+            "></div>
+      </section>
+      <!-- hero section ends
 ================================================== -->
 
-        <!-- boxed feature section starts
+      <!-- boxed feature section starts
 ================================================== -->
-        <section
-          class="dtr-section dtr-pt-100 dtr-pb-70 dtr-section-with-bg bg-light-blue parallax"
-          style="background-image: url(images/section-bg1.png)"
-        >
-          <div class="container">
-            <!-- section intro row starts -->
-            <div class="row dtr-mb-50">
-              <div class="col-12 text-center">
-                <h2>Why CoWallet</h2>
-                <div
-                  class="dtr-styled-divider divider-center bg-light-violet"
-                ></div>
-              </div>
-            </div>
-            <!-- section intro row ends -->
-            <!-- row starts -->
-            <div class="row">
-              <!-- column 1 starts -->
-              <div class="col-12 col-md">
-                <!-- feature starts -->
-                <div
-                  class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white"
-                >
-                  <div class="dtr-feature-img">
-                    <img src="images/project management.png" alt="image" />
-                  </div>
-                  <div class="dtr-feature-content">
-                    <!-- <h3>Saasflix</h3> -->
-                    <p>Manage all projects in one place</p>
-                  </div>
-                </div>
-                <!-- feature ends -->
-              </div>
-              <!-- column 1 ends -->
-
-              <!-- column 2 starts -->
-              <div class="col-12 col-md">
-                <!-- feature starts -->
-                <div
-                  class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white"
-                >
-                  <div class="dtr-feature-img">
-                    <img src="images/expense and income.png" alt="image" />
-                  </div>
-                  <div class="dtr-feature-content">
-                    <!-- <h3>Saasflix</h3> -->
-                    <p>Add expenses and income</p>
-                  </div>
-                </div>
-                <!-- feature ends -->
-              </div>
-              <!-- column 2 ends -->
-
-              <!-- column 3 starts -->
-              <div class="col-12 col-md">
-                <!-- feature starts -->
-                <div
-                  class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white"
-                >
-                  <div class="dtr-feature-img">
-                    <img src="images/worker and party.png" alt="image" />
-                  </div>
-                  <div class="dtr-feature-content">
-                    <!-- <h3>Saasflix</h3> -->
-                    <p>Know your workers and party Details</p>
-                  </div>
-                </div>
-                <!-- feature ends -->
-              </div>
-              <!-- column 3 ends -->
-
-              <!-- column 3 starts -->
-              <div class="col-12 col-md">
-                <!-- feature starts -->
-                <div
-                  class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white"
-                >
-                  <div class="dtr-feature-img">
-                    <img src="images/get reports.png" alt="image" />
-                  </div>
-                  <div class="dtr-feature-content">
-                    <!-- <h3>Saasflix</h3> -->
-                    <p>Get your reports in seconds</p>
-                  </div>
-                </div>
-                <!-- feature ends -->
-              </div>
-              <!-- column 3 ends -->
-            </div>
-            <!-- row ends -->
-          </div>
-        </section>
-        <!-- boxed feature section ends
-================================================== -->
-
-        <!-- logo slider section starts
-================================================== -->
-        <section
-          class="dtr-section dtr-md-mx-20 dtr-border-bottom border-grey dtr-py-50"
-        >
-          <!-- row starts -->
-          <div class="row">
-            <div class="col-12">
-              <div class="dtr-slick-slider dtr-logo-carousel">
-                <!-- logo 1 -->
-                <div><img src="images/client-1.png" alt="image" /></div>
-                <!-- logo 2 -->
-                <div><img src="images/client-2.png" alt="image" /></div>
-                <!-- logo 3 -->
-                <div><img src="images/client-3.png" alt="image" /></div>
-                <!-- logo 4 -->
-                <div><img src="images/client-4.png" alt="image" /></div>
-                <!-- logo 5 -->
-                <div><img src="images/client-5.png" alt="image" /></div>
-                <!-- logo 6 -->
-                <div><img src="images/client-3.png" alt="image" /></div>
-              </div>
-            </div>
-          </div>
-          <!-- row ends -->
-        </section>
-        <!-- logo slider section ends
-================================================== -->
-
-        <!-- our feature section starts
-================================================== -->
-        <section id="features" class="dtr-section app-features dtr-py-100">
-          <div class="container">
-            <div class="row dtr-mb-50">
-              <div class="col-12 text-center">
-                <h2>Our Features</h2>
-                <div
-                  class="dtr-styled-divider divider-center bg-light-violet"
-                ></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 col-lg-4 wow fadeInUp">
-                <img
-                  class="img-fluid features-img"
-                  src="images/mobile-view.png"
-                  alt="App"
-                />
-              </div>
-
-              <div class="col-md-6 col-lg-4 features-left">
-                <div class="col-sm-12 wow fadeInUp">
-                  <div class="icon">
-                    <img src="images/ft-project.png" alt="Icon" />
-                  </div>
-                  <div class="feature-single">
-                    <h1>Manage Projects</h1>
-                    <p>
-                      Effortlessly oversee and navigate through all your
-                      projects in one centralized dashboard.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-12 wow fadeInUp">
-                  <div class="icon">
-                    <img src="images/ft-worker.png" alt="Icon" />
-                  </div>
-                  <div class="feature-single">
-                    <h1>Manage Workers</h1>
-                    <p>
-                      Transform Financial Management with Contractor Wallet.
-                      Your solution to hassle-free worker finances!
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-12 wow fadeInUp">
-                  <div class="icon">
-                    <img src="images/ft-tool.png" alt="Icon" />
-                  </div>
-                  <div class="feature-single">
-                    <h1>Manage Tools</h1>
-                    <p>
-                      Instantly locate tools and equipment, eliminating
-                      downtime.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-lg-4 features-left left-2">
-                <div class="col-sm-12 wow fadeInUp">
-                  <div class="icon">
-                    <img src="images/ft-supervisor.png" alt="Icon" />
-                  </div>
-                  <div class="feature-single">
-                    <h1>Supervisor Login</h1>
-                    <p>
-                      Add expenses on the go, Stay in control by monitoring
-                      on-site transactions in real-time.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-12 wow fadeInUp">
-                  <div class="icon">
-                    <img src="images/ft-expense.png" alt="Icon" />
-                  </div>
-                  <div class="feature-single">
-                    <h1>Add Expenses</h1>
-                    <p>
-                      Stay on top of costs with instant updates on
-                      project-related expenditures.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-12 wow fadeInUp">
-                  <div class="icon">
-                    <img src="images/ft-report.png" alt="Icon" />
-                  </div>
-                  <div class="feature-single">
-                    <h1>Get Reports</h1>
-                    <p>
-                      Simplify your workflow – all your reports, just one click
-                      away!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- our feature section ends
-================================================== -->
-
-        <!-- Explore More Features section starts -->
-        <section
-          class="dtr-section dtr-py-100 bg-light-blue parallax"
-          style="background-image: url(images/section-bg1.png)"
-        >
-          <!-- <div class="container"> -->
+      <section class="dtr-section dtr-pt-100 dtr-pb-70 dtr-section-with-bg bg-light-blue parallax"
+        style="background-image: url(images/section-bg1.png)">
+        <div class="container">
           <!-- section intro row starts -->
           <div class="row dtr-mb-50">
             <div class="col-12 text-center">
-              <h2>Explore More Features</h2>
+              <h2>Why CoWallet</h2>
+              <div class="dtr-styled-divider divider-center bg-light-violet"></div>
+            </div>
+          </div>
+          <!-- section intro row ends -->
+          <!-- row starts -->
+          <div class="row">
+            <!-- column 1 starts -->
+            <div class="col-12 col-md">
+              <!-- feature starts -->
               <div
-                class="dtr-styled-divider divider-center bg-light-violet"
-              ></div>
+                class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white">
+                <div class="dtr-feature-img">
+                  <img src="images/project management.png" alt="image" />
+                </div>
+                <div class="dtr-feature-content">
+                  <!-- <h3>Saasflix</h3> -->
+                  <p>Manage all projects in one place</p>
+                </div>
+              </div>
+              <!-- feature ends -->
+            </div>
+            <!-- column 1 ends -->
+
+            <!-- column 2 starts -->
+            <div class="col-12 col-md">
+              <!-- feature starts -->
+              <div
+                class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white">
+                <div class="dtr-feature-img">
+                  <img src="images/expense and income.png" alt="image" />
+                </div>
+                <div class="dtr-feature-content">
+                  <!-- <h3>Saasflix</h3> -->
+                  <p>Add expenses and income</p>
+                </div>
+              </div>
+              <!-- feature ends -->
+            </div>
+            <!-- column 2 ends -->
+
+            <!-- column 3 starts -->
+            <div class="col-12 col-md">
+              <!-- feature starts -->
+              <div
+                class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white">
+                <div class="dtr-feature-img">
+                  <img src="images/worker and party.png" alt="image" />
+                </div>
+                <div class="dtr-feature-content">
+                  <!-- <h3>Saasflix</h3> -->
+                  <p>Know your workers and party Details</p>
+                </div>
+              </div>
+              <!-- feature ends -->
+            </div>
+            <!-- column 3 ends -->
+
+            <!-- column 3 starts -->
+            <div class="col-12 col-md">
+              <!-- feature starts -->
+              <div
+                class="dtr-feature dtr-feature-top feature-has-box feature-has-shadow dtr-rounded-corner-xl text-center bg-white">
+                <div class="dtr-feature-img">
+                  <img src="images/get reports.png" alt="image" />
+                </div>
+                <div class="dtr-feature-content">
+                  <!-- <h3>Saasflix</h3> -->
+                  <p>Get your reports in seconds</p>
+                </div>
+              </div>
+              <!-- feature ends -->
+            </div>
+            <!-- column 3 ends -->
+          </div>
+          <!-- row ends -->
+        </div>
+      </section>
+      <!-- boxed feature section ends
+================================================== -->
+
+      <!-- logo slider section starts
+================================================== -->
+      <section class="dtr-section dtr-md-mx-20 dtr-border-bottom border-grey dtr-py-50">
+        <!-- row starts -->
+        <div class="row">
+          <div class="col-12">
+            <div class="dtr-slick-slider dtr-logo-carousel">
+              <!-- logo 1 -->
+              <div><img src="images/client-1.png" alt="image" /></div>
+              <!-- logo 2 -->
+              <div><img src="images/client-2.png" alt="image" /></div>
+              <!-- logo 3 -->
+              <div><img src="images/client-3.png" alt="image" /></div>
+              <!-- logo 4 -->
+              <div><img src="images/client-4.png" alt="image" /></div>
+              <!-- logo 5 -->
+              <div><img src="images/client-5.png" alt="image" /></div>
+              <!-- logo 6 -->
+              <div><img src="images/client-3.png" alt="image" /></div>
+            </div>
+          </div>
+        </div>
+        <!-- row ends -->
+      </section>
+      <!-- logo slider section ends
+================================================== -->
+
+      <!-- our feature section starts
+================================================== -->
+      <section id="features" class="dtr-section app-features dtr-py-100">
+        <div class="container">
+          <div class="row dtr-mb-50">
+            <div class="col-12 text-center">
+              <h2>Our Features</h2>
+              <div class="dtr-styled-divider divider-center bg-light-violet"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-4 wow fadeInUp">
+              <img class="img-fluid features-img" src="images/mobile-view.png" alt="App" />
+            </div>
+
+            <div class="col-md-6 col-lg-4 features-left">
+              <div class="col-sm-12 wow fadeInUp">
+                <div class="icon">
+                  <img src="images/ft-project.png" alt="Icon" />
+                </div>
+                <div class="feature-single">
+                  <h1>Manage Projects</h1>
+                  <p>
+                    Effortlessly oversee and navigate through all your
+                    projects in one centralized dashboard.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 wow fadeInUp">
+                <div class="icon">
+                  <img src="images/ft-worker.png" alt="Icon" />
+                </div>
+                <div class="feature-single">
+                  <h1>Manage Workers</h1>
+                  <p>
+                    Transform Financial Management with Contractor Wallet.
+                    Your solution to hassle-free worker finances!
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 wow fadeInUp">
+                <div class="icon">
+                  <img src="images/ft-tool.png" alt="Icon" />
+                </div>
+                <div class="feature-single">
+                  <h1>Manage Tools</h1>
+                  <p>
+                    Instantly locate tools and equipment, eliminating
+                    downtime.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 features-left left-2">
+              <div class="col-sm-12 wow fadeInUp">
+                <div class="icon">
+                  <img src="images/ft-supervisor.png" alt="Icon" />
+                </div>
+                <div class="feature-single">
+                  <h1>Supervisor Login</h1>
+                  <p>
+                    Add expenses on the go, Stay in control by monitoring
+                    on-site transactions in real-time.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 wow fadeInUp">
+                <div class="icon">
+                  <img src="images/ft-expense.png" alt="Icon" />
+                </div>
+                <div class="feature-single">
+                  <h1>Add Expenses</h1>
+                  <p>
+                    Stay on top of costs with instant updates on
+                    project-related expenditures.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 wow fadeInUp">
+                <div class="icon">
+                  <img src="images/ft-report.png" alt="Icon" />
+                </div>
+                <div class="feature-single">
+                  <h1>Get Reports</h1>
+                  <p>
+                    Simplify your workflow – all your reports, just one click
+                    away!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our feature section ends
+================================================== -->
+
+      <!-- Explore More Features section starts -->
+      <section class="dtr-section dtr-py-100 bg-light-blue parallax"
+        style="background-image: url(images/section-bg1.png)">
+        <!-- <div class="container"> -->
+        <!-- section intro row starts -->
+        <div class="row dtr-mb-50">
+          <div class="col-12 text-center">
+            <h2>Explore More Features</h2>
+            <div class="dtr-styled-divider divider-center bg-light-violet"></div>
+          </div>
+        </div>
+        <!-- section intro row ends -->
+
+        <!--===== more features slider starts =====-->
+        <div class="dtr-slick-slider dtr-feature-style1 dtr-feature-boxed">
+          <!-- Feature Card -->
+          <div class="dtr-feature dtr-rounded-corner-xl bg-white">
+            <div class="dtr-team team-has-shadow text-center bg-white">
+              <div class="dtr-team-img">
+                <img src="images/ft-invoice.png" alt="image" />
+              </div>
+              <div class="dtr-team-content">
+                <p>GST Invoice</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature Card -->
+          <div class="dtr-feature dtr-rounded-corner-xl bg-white">
+            <div class="dtr-team team-has-shadow text-center bg-white">
+              <div class="dtr-team-img">
+                <img src="images/ft-deposits.png" alt="image" />
+              </div>
+              <div class="dtr-team-content">
+                <p>FD & AD PG</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature Card -->
+          <div class="dtr-feature dtr-rounded-corner-xl bg-white">
+            <div class="dtr-team team-has-shadow text-center bg-white">
+              <div class="dtr-team-img">
+                <img src="images/ft-etender.png" alt="image" />
+              </div>
+              <div class="dtr-team-content">
+                <p>E Tender Notification</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature Card -->
+          <div class="dtr-feature dtr-rounded-corner-xl bg-white">
+            <div class="dtr-team team-has-shadow text-center bg-white">
+              <div class="dtr-team-img">
+                <img src="images/ft-notification.png" alt="image" />
+              </div>
+              <div class="dtr-team-content">
+                <p>Notifications</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature Card -->
+          <div class="dtr-feature dtr-rounded-corner-xl bg-white">
+            <div class="dtr-team team-has-shadow text-center bg-white">
+              <div class="dtr-team-img">
+                <img src="images/ft-accounts.png" alt="image" />
+              </div>
+              <div class="dtr-team-content">
+                <p>Account Details & Transactions</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature Card -->
+          <div class="dtr-feature dtr-rounded-corner-xl bg-white">
+            <div class="dtr-team team-has-shadow text-center bg-white">
+              <div class="dtr-team-img">
+                <img src="images/ft-customer.png" alt="image" />
+              </div>
+              <div class="dtr-team-content">
+                <p>Customer Details</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature Card -->
+          <div class="dtr-feature dtr-rounded-corner-xl bg-white">
+            <div class="dtr-team team-has-shadow text-center bg-white">
+              <div class="dtr-team-img">
+                <img src="images/ft-adminstration.png" alt="image" />
+              </div>
+              <div class="dtr-team-content">
+                <p>Adminstration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+      <!-- Explore More Features section ends -->
+
+      <!-- tabs section starts
+================================================== -->
+      <section class="dtr-section dtr-py-100">
+        <div class="container">
+          <!-- section intro row starts -->
+          <div class="row dtr-mb-30">
+            <div class="col-12 text-center">
+              <h2>How it works?</h2>
+              <p>Revolutionizing Construction Management.</p>
+              <div class="dtr-styled-divider divider-center bg-light-violet"></div>
             </div>
           </div>
           <!-- section intro row ends -->
 
-          <!--===== more features slider starts =====-->
-          <div class="dtr-slick-slider dtr-feature-style1 dtr-feature-boxed">
-            <!-- Feature Card -->
-            <div class="dtr-feature dtr-rounded-corner-xl bg-white">
-              <div class="dtr-team team-has-shadow text-center bg-white">
-                <div class="dtr-team-img">
-                  <img src="images/ft-invoice.png" alt="image" />
+          <!-- tabs starts -->
+          <div class="row d-flex align-items-center dtr-features-tab">
+            <!-- left column starts -->
+            <div class="col-12 col-md-6">
+              <div class="tab-content" id="v-pills-tabContent">
+                <!-- tab 1 -->
+                <div class="tab-pane fade" id="features-tab-1" role="tabpanel" aria-labelledby="features-tab-1-tab">
+                  <img src="images/dashboard.png" alt="image" />
                 </div>
-                <div class="dtr-team-content">
-                  <p>GST Invoice</p>
+                <!-- tab 2 -->
+                <div class="tab-pane fade show active" id="features-tab-2" role="tabpanel"
+                  aria-labelledby="features-tab-2-tab">
+                  <img src="images/dashboard.png" alt="image" />
                 </div>
-              </div>
-            </div>
-            <!-- Feature Card -->
-            <div class="dtr-feature dtr-rounded-corner-xl bg-white">
-              <div class="dtr-team team-has-shadow text-center bg-white">
-                <div class="dtr-team-img">
-                  <img src="images/ft-deposits.png" alt="image" />
-                </div>
-                <div class="dtr-team-content">
-                  <p>FD & AD PG</p>
+                <!-- tab 3 -->
+                <div class="tab-pane fade" id="features-tab-3" role="tabpanel" aria-labelledby="features-tab-3-tab">
+                  <img src="images/dashboard.png" alt="image" />
                 </div>
               </div>
             </div>
-            <!-- Feature Card -->
-            <div class="dtr-feature dtr-rounded-corner-xl bg-white">
-              <div class="dtr-team team-has-shadow text-center bg-white">
-                <div class="dtr-team-img">
-                  <img src="images/ft-etender.png" alt="image" />
-                </div>
-                <div class="dtr-team-content">
-                  <p>E Tender Notification</p>
-                </div>
+            <!-- left column ends -->
+
+            <!-- right (nav) column starts -->
+            <div class="col-12 col-md-6">
+              <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                <!-- tab 1 content starts -->
+                <a class="nav-link" id="features-tab-1-tab" data-toggle="pill" href="#features-tab-1" role="tab"
+                  aria-controls="features-tab-1" aria-selected="false">
+                  <h4 class="font-weight-600">Create Your Tasks</h4>
+                  <p>
+                    Effortlessly launch your construction projects with
+                    Contractor Wallet. Create project timelines, assign tasks,
+                    and set milestones effortlessly. Streamline project
+                    initiation with just a few clicks. On-Site Empowerment:
+                  </p>
+                </a>
+                <!-- tab 1 content ends -->
+
+                <!-- tab 2 content starts -->
+                <a class="nav-link active" id="features-tab-2-tab" data-toggle="pill" href="#features-tab-2" role="tab"
+                  aria-controls="features-tab-2" aria-selected="true">
+                  <h4 class="font-weight-600">Build Your Flow</h4>
+                  <p>
+                    Grant on-site supervisors direct control from the field.
+                    Manage projects, allocate tasks, and monitor real-time
+                    progress. Contractor Wallet provides the flexibility to
+                    make crucial decisions on the spot, enhancing on-site
+                    empowerment. Unified Collaboration:
+                  </p>
+                </a>
+                <!-- tab 2 content ends -->
+
+                <!-- tab 3 content starts -->
+                <a class="nav-link" id="features-tab-3-tab" data-toggle="pill" href="#features-tab-3" role="tab"
+                  aria-controls="features-tab-3" aria-selected="false">
+                  <h4 class="font-weight-600">Manage All Users</h4>
+                  <p>
+                    Foster collaboration among site engineers, supervisors,
+                    and workers seamlessly. Contractor Wallet enhances
+                    communication, facilitates real-time updates, and ensures
+                    everyone is on the same page. Streamline project teamwork
+                    effortlessly.
+                  </p>
+                </a>
+                <!-- tab 3 content ends -->
               </div>
             </div>
-            <!-- Feature Card -->
-            <div class="dtr-feature dtr-rounded-corner-xl bg-white">
-              <div class="dtr-team team-has-shadow text-center bg-white">
-                <div class="dtr-team-img">
-                  <img src="images/ft-notification.png" alt="image" />
-                </div>
-                <div class="dtr-team-content">
-                  <p>Notifications</p>
-                </div>
-              </div>
-            </div>
-            <!-- Feature Card -->
-            <div class="dtr-feature dtr-rounded-corner-xl bg-white">
-              <div class="dtr-team team-has-shadow text-center bg-white">
-                <div class="dtr-team-img">
-                  <img src="images/ft-accounts.png" alt="image" />
-                </div>
-                <div class="dtr-team-content">
-                  <p>Account Details & Transactions</p>
-                </div>
-              </div>
-            </div>
-            <!-- Feature Card -->
-            <div class="dtr-feature dtr-rounded-corner-xl bg-white">
-              <div class="dtr-team team-has-shadow text-center bg-white">
-                <div class="dtr-team-img">
-                  <img src="images/ft-customer.png" alt="image" />
-                </div>
-                <div class="dtr-team-content">
-                  <p>Customer Details</p>
-                </div>
-              </div>
-            </div>
-            <!-- Feature Card -->
-            <div class="dtr-feature dtr-rounded-corner-xl bg-white">
-              <div class="dtr-team team-has-shadow text-center bg-white">
-                <div class="dtr-team-img">
-                  <img src="images/ft-adminstration.png" alt="image" />
-                </div>
-                <div class="dtr-team-content">
-                  <p>Adminstration</p>
-                </div>
-              </div>
-            </div>
+            <!-- right (nav) column ends -->
           </div>
-          <!-- </div> -->
-        </section>
-        <!-- Explore More Features section ends -->
-
-        <!-- tabs section starts
+          <!-- tabs starts -->
+        </div>
+      </section>
+      <!-- tabs section ends
 ================================================== -->
-        <section class="dtr-section dtr-py-100">
-          <div class="container">
-            <!-- section intro row starts -->
-            <div class="row dtr-mb-30">
-              <div class="col-12 text-center">
-                <h2>How it works?</h2>
-                <p>Revolutionizing Construction Management.</p>
-                <div
-                  class="dtr-styled-divider divider-center bg-light-violet"
-                ></div>
+
+      <!-- testimonial section starts
+================================================== -->
+      <section id="reviews" class="dtr-section dtr-md-mx-20 dtr-py-100 bg-violet">
+        <!-- heading-->
+        <h3 class="text-center dtr-mb-50 color-white">
+          What People Think About Us
+        </h3>
+
+        <!--===== testimonial slider starts =====-->
+        <div class="dtr-slick-slider dtr-testimonial-style1 dtr-testimonial-boxed">
+          <!--== slide 1 starts ==-->
+          <div class="dtr-testimonial dtr-rounded-corner-xl bg-white">
+            <!-- review text -->
+            <div class="dtr-testimonial-content">
+              "Effortless collaboration and streamlined communication –
+              Cowallet has significantly improved our project coordination."
+            </div>
+            <!-- client info -->
+            <div class="dtr-client-info">
+              <div class="dtr-testimonial-user-info">
+                <h6 class="dtr-client-name">Shameem</h6>
+                <span class="dtr-client-job">Thoombalakkadan Constructions</span>
               </div>
             </div>
-            <!-- section intro row ends -->
-
-            <!-- tabs starts -->
-            <div class="row d-flex align-items-center dtr-features-tab">
-              <!-- left column starts -->
-              <div class="col-12 col-md-6">
-                <div class="tab-content" id="v-pills-tabContent">
-                  <!-- tab 1 -->
-                  <div
-                    class="tab-pane fade"
-                    id="features-tab-1"
-                    role="tabpanel"
-                    aria-labelledby="features-tab-1-tab"
-                  >
-                    <img src="images/dashboard.png" alt="image" />
-                  </div>
-                  <!-- tab 2 -->
-                  <div
-                    class="tab-pane fade show active"
-                    id="features-tab-2"
-                    role="tabpanel"
-                    aria-labelledby="features-tab-2-tab"
-                  >
-                    <img src="images/dashboard.png" alt="image" />
-                  </div>
-                  <!-- tab 3 -->
-                  <div
-                    class="tab-pane fade"
-                    id="features-tab-3"
-                    role="tabpanel"
-                    aria-labelledby="features-tab-3-tab"
-                  >
-                    <img src="images/dashboard.png" alt="image" />
-                  </div>
-                </div>
-              </div>
-              <!-- left column ends -->
-
-              <!-- right (nav) column starts -->
-              <div class="col-12 col-md-6">
-                <div
-                  class="nav flex-column nav-pills"
-                  role="tablist"
-                  aria-orientation="vertical"
-                >
-                  <!-- tab 1 content starts -->
-                  <a
-                    class="nav-link"
-                    id="features-tab-1-tab"
-                    data-toggle="pill"
-                    href="#features-tab-1"
-                    role="tab"
-                    aria-controls="features-tab-1"
-                    aria-selected="false"
-                  >
-                    <h4 class="font-weight-600">Create Your Tasks</h4>
-                    <p>
-                      Effortlessly launch your construction projects with
-                      Contractor Wallet. Create project timelines, assign tasks,
-                      and set milestones effortlessly. Streamline project
-                      initiation with just a few clicks. On-Site Empowerment:
-                    </p>
-                  </a>
-                  <!-- tab 1 content ends -->
-
-                  <!-- tab 2 content starts -->
-                  <a
-                    class="nav-link active"
-                    id="features-tab-2-tab"
-                    data-toggle="pill"
-                    href="#features-tab-2"
-                    role="tab"
-                    aria-controls="features-tab-2"
-                    aria-selected="true"
-                  >
-                    <h4 class="font-weight-600">Build Your Flow</h4>
-                    <p>
-                      Grant on-site supervisors direct control from the field.
-                      Manage projects, allocate tasks, and monitor real-time
-                      progress. Contractor Wallet provides the flexibility to
-                      make crucial decisions on the spot, enhancing on-site
-                      empowerment. Unified Collaboration:
-                    </p>
-                  </a>
-                  <!-- tab 2 content ends -->
-
-                  <!-- tab 3 content starts -->
-                  <a
-                    class="nav-link"
-                    id="features-tab-3-tab"
-                    data-toggle="pill"
-                    href="#features-tab-3"
-                    role="tab"
-                    aria-controls="features-tab-3"
-                    aria-selected="false"
-                  >
-                    <h4 class="font-weight-600">Manage All Users</h4>
-                    <p>
-                      Foster collaboration among site engineers, supervisors,
-                      and workers seamlessly. Contractor Wallet enhances
-                      communication, facilitates real-time updates, and ensures
-                      everyone is on the same page. Streamline project teamwork
-                      effortlessly.
-                    </p>
-                  </a>
-                  <!-- tab 3 content ends -->
-                </div>
-              </div>
-              <!-- right (nav) column ends -->
-            </div>
-            <!-- tabs starts -->
+            <!-- client info ends -->
           </div>
-        </section>
-        <!-- tabs section ends
-================================================== -->
+          <!--== slide 1 ends ==-->
 
-        <!-- testimonial section starts
-================================================== -->
-        <section
-          id="reviews"
-          class="dtr-section dtr-md-mx-20 dtr-py-100 bg-violet"
-        >
-          <!-- heading-->
-          <h3 class="text-center dtr-mb-50 color-white">
-            Trusted by over 100+ customers
-          </h3>
-
-          <!--===== testimonial slider starts =====-->
-          <div
-            class="dtr-slick-slider dtr-testimonial-style1 dtr-testimonial-boxed"
-          >
-            <!--== slide 1 starts ==-->
-            <div class="dtr-testimonial dtr-rounded-corner-xl bg-white">
-              <!-- review text -->
-              <div class="dtr-testimonial-content">
-                "Effortless collaboration and streamlined communication –
-                Cowallet has significantly improved our project coordination."
-              </div>
-              <!-- client info -->
-              <div class="dtr-client-info">
-                <div class="dtr-testimonial-user-info">
-                  <h6 class="dtr-client-name">Noushad</h6>
-                  <span class="dtr-client-job"
-                    >Thoombalakkadan Constructions</span
-                  >
-                </div>
-              </div>
-              <!-- client info ends -->
+          <!--== slide 2 starts ==-->
+          <div class="dtr-testimonial dtr-rounded-corner-xl bg-white">
+            <!-- review text -->
+            <div class="dtr-testimonial-content">
+              “Cowallet transformed our construction projects with its
+              seamless integration and efficiency. A game-changer in
+              construction management”
             </div>
-            <!--== slide 1 ends ==-->
-
-            <!--== slide 2 starts ==-->
-            <div class="dtr-testimonial dtr-rounded-corner-xl bg-white">
-              <!-- review text -->
-              <div class="dtr-testimonial-content">
-                “Cowallet transformed our construction projects with its
-                seamless integration and efficiency. A game-changer in
-                construction management”
+            <!-- client info -->
+            <div class="dtr-client-info">
+              <div class="dtr-testimonial-user-info">
+                <h6 class="dtr-client-name">Sajeer</h6>
+                <span class="dtr-client-job">Thonikkadavath Developers</span>
               </div>
-              <!-- client info -->
-              <div class="dtr-client-info">
-                <div class="dtr-testimonial-user-info">
-                  <h6 class="dtr-client-name">Shameem</h6>
-                  <span class="dtr-client-job">Thonikkadavath Developers</span>
-                </div>
-              </div>
-              <!-- client info ends -->
             </div>
-            <!--== slide 2 ends ==-->
-
-            <!--== slide 3 starts ==-->
-            <div class="dtr-testimonial dtr-rounded-corner-xl bg-white">
-              <!-- review text -->
-              <div class="dtr-testimonial-content">
-                "Managing sites is a breeze with Cowallet. Accessing plans and
-                reports on the go has made my job efficient and organized."
-              </div>
-              <!-- client info -->
-              <div class="dtr-client-info">
-                <div class="dtr-testimonial-user-info">
-                  <h6 class="dtr-client-name">Munna</h6>
-                  <span class="dtr-client-job">Munna Construction</span>
-                </div>
-              </div>
-              <!-- client info ends -->
-            </div>
-            <!--== slide 3 ends ==-->
-
-            <!--== slide 4 starts ==-->
-            <div class="dtr-testimonial dtr-rounded-corner-xl bg-white">
-              <!-- review text -->
-              <div class="dtr-testimonial-content">
-                "Cowallet simplified our estimation process, saving time and
-                improving accuracy. A powerful tool for construction cost
-                analysis."
-              </div>
-              <!-- client info -->
-              <div class="dtr-client-info">
-                <div class="dtr-testimonial-user-info">
-                  <h6 class="dtr-client-name">Ajnas</h6>
-                  <span class="dtr-client-job">AJ Constructions</span>
-                </div>
-              </div>
-              <!-- client info ends -->
-            </div>
-            <!--== slide 4 ends ==-->
+            <!-- client info ends -->
           </div>
-          <!--===== testimonial slider ends =====-->
-        </section>
-        <!-- testimonial section ends
+          <!--== slide 2 ends ==-->
+
+          <!--== slide 3 starts ==-->
+          <div class="dtr-testimonial dtr-rounded-corner-xl bg-white">
+            <!-- review text -->
+            <div class="dtr-testimonial-content">
+              "Managing sites is a breeze with Cowallet. Accessing plans and
+              reports on the go has made my job efficient and organized."
+            </div>
+            <!-- client info -->
+            <div class="dtr-client-info">
+              <div class="dtr-testimonial-user-info">
+                <h6 class="dtr-client-name">Noushad</h6>
+                <span class="dtr-client-job">Munna Construction</span>
+              </div>
+            </div>
+            <!-- client info ends -->
+          </div>
+          <!--== slide 3 ends ==-->
+
+          <!--== slide 4 starts ==-->
+          <div class="dtr-testimonial dtr-rounded-corner-xl bg-white">
+            <!-- review text -->
+            <div class="dtr-testimonial-content">
+              "Cowallet simplified our estimation process, saving time and
+              improving accuracy. A powerful tool for construction cost
+              analysis."
+            </div>
+            <!-- client info -->
+            <div class="dtr-client-info">
+              <div class="dtr-testimonial-user-info">
+                <h6 class="dtr-client-name">Ajnas</h6>
+                <span class="dtr-client-job">AJ Constructions</span>
+              </div>
+            </div>
+            <!-- client info ends -->
+          </div>
+          <!--== slide 4 ends ==-->
+        </div>
+        <!--===== testimonial slider ends =====-->
+      </section>
+      <!-- testimonial section ends
 ================================================== -->
 
-        <!-- faq section starts
+      <!-- faq section starts
 ================================================== -->
-        <section id="contact" class="dtr-section dtr-py-100">
-          <div class="container">
-            <h3 class="color-blue dtr-mb-40">Frequently asked questions</h3>
-            <!-- row 1 starts -->
-            <div class="row">
+      <section id="contact" class="dtr-section dtr-py-100">
+        <div class="container">
+          <h3 class="color-blue dtr-mb-40">Frequently asked questions</h3>
+          <!-- row 1 starts -->
+          <div class="row">
+            <!-- column 1 starts -->
+            <div class="col-12 col-md-6">
+              <!-- faq item starts -->
+              <div class="faq-item">
+                <h4 class="faq-heading">What is Contractor Wallet?</h4>
+                <div class="faq-content">
+                  Contractor Wallet is an innovative construction management
+                  software designed to streamline project operations, enhance
+                  collaboration, and simplify financial management for
+                  construction professionals.
+                </div>
+              </div>
+              <!-- faq item ends -->
+
+              <!-- faq item starts -->
+              <div class="faq-item">
+                <h4 class="faq-heading">
+                  How can Contractor Wallet benefit my construction projects?
+                </h4>
+                <div class="faq-content">
+                  Contractor Wallet empowers you to manage projects, supervise
+                  on-site operations, handle expenses, and gain valuable
+                  insights through robust reporting tools, ultimately
+                  improving efficiency and project success.
+                </div>
+              </div>
+              <!-- faq item ends -->
+
+              <!-- faq item starts -->
+              <div class="faq-item">
+                <h4 class="faq-heading">
+                  Is Contractor Wallet easy to set up?
+                </h4>
+                <div class="faq-content">
+                  Absolutely! Contractor Wallet is designed with
+                  user-friendliness in mind. The onboarding process is
+                  straightforward, and our support team is always ready to
+                  assist you.
+                </div>
+              </div>
+              <!-- faq item ends -->
+
+              <!-- faq item starts -->
+              <div class="faq-item dtr-mb-0">
+                <h4 class="faq-heading">Are there any hidden fees?</h4>
+                <div class="faq-content">
+                  No hidden fees. Our pricing is transparent, and you only pay
+                  for the features and services you choose.
+                </div>
+              </div>
+              <!-- faq item ends -->
+            </div>
+            <!-- column 1 ends -->
+
+            <!-- column 2 starts -->
+            <div class="col-12 col-md-6">
+              <!-- faq item starts -->
+              <div class="faq-item">
+                <h4 class="faq-heading">
+                  What training is provided for new users?
+                </h4>
+                <div class="faq-content">
+                  We offer comprehensive training materials, tutorials, and
+                  live support sessions to ensure you and your team are
+                  confident and proficient in using Contractor Wallet.
+                </div>
+              </div>
+              <!-- faq item ends -->
+
+              <!-- faq item starts -->
+              <div class="faq-item">
+                <h4 class="faq-heading">
+                  How secure is my data with Contractor Wallet?
+                </h4>
+                <div class="faq-content">
+                  Security is our top priority. Contractor Wallet employs
+                  robust encryption measures and follows industry best
+                  practices to safeguard your data. We prioritize your privacy
+                  and adhere to stringent data protection standards.
+                </div>
+              </div>
+              <!-- faq item ends -->
+
+              <!-- faq item starts -->
+              <div class="faq-item">
+                <h4 class="faq-heading">
+                  What is the pricing structure for Contractor Wallet?
+                </h4>
+                <div class="faq-content">
+                  Our pricing is based on a subscription model. Please visit
+                  our Pricing page for detailed information on plans and
+                  features.
+                </div>
+              </div>
+              <!-- faq item ends -->
+
+              <!-- faq item starts -->
+              <div class="faq-item">
+                <h4 class="faq-heading">
+                  What support options are available?
+                </h4>
+                <div class="faq-content">
+                  We provide various support channels, including email
+                  support, live chat, and a comprehensive knowledge base. Our
+                  support team is dedicated to ensuring you have a smooth
+                  experience with Contractor Wallet.
+                </div>
+              </div>
+              <!-- faq item ends -->
+            </div>
+            <!-- column 2 ends -->
+          </div>
+          <!-- row 1 ends -->
+
+          <!-- row 2 starts -->
+          <div class="dtr-cta-box dtr-rounded-corner-xl dtr-shadow dtr-mt-50 bg-white">
+            <div class="row d-flex">
               <!-- column 1 starts -->
-              <div class="col-12 col-md-6">
-                <!-- faq item starts -->
-                <div class="faq-item">
-                  <h4 class="faq-heading">What is Contractor Wallet?</h4>
-                  <div class="faq-content">
-                    Contractor Wallet is an innovative construction management
-                    software designed to streamline project operations, enhance
-                    collaboration, and simplify financial management for
-                    construction professionals.
-                  </div>
-                </div>
-                <!-- faq item ends -->
-
-                <!-- faq item starts -->
-                <div class="faq-item">
-                  <h4 class="faq-heading">
-                    How can Contractor Wallet benefit my construction projects?
-                  </h4>
-                  <div class="faq-content">
-                    Contractor Wallet empowers you to manage projects, supervise
-                    on-site operations, handle expenses, and gain valuable
-                    insights through robust reporting tools, ultimately
-                    improving efficiency and project success.
-                  </div>
-                </div>
-                <!-- faq item ends -->
-
-                <!-- faq item starts -->
-                <div class="faq-item">
-                  <h4 class="faq-heading">
-                    Is Contractor Wallet easy to set up?
-                  </h4>
-                  <div class="faq-content">
-                    Absolutely! Contractor Wallet is designed with
-                    user-friendliness in mind. The onboarding process is
-                    straightforward, and our support team is always ready to
-                    assist you.
-                  </div>
-                </div>
-                <!-- faq item ends -->
-
-                <!-- faq item starts -->
-                <div class="faq-item dtr-mb-0">
-                  <h4 class="faq-heading">Are there any hidden fees?</h4>
-                  <div class="faq-content">
-                    No hidden fees. Our pricing is transparent, and you only pay
-                    for the features and services you choose.
-                  </div>
-                </div>
-                <!-- faq item ends -->
+              <div class="col-12 col-md-5 align-self-end">
+                <img src="images/footer3d.png" alt="image" />
               </div>
               <!-- column 1 ends -->
-
               <!-- column 2 starts -->
-              <div class="col-12 col-md-6">
-                <!-- faq item starts -->
-                <div class="faq-item">
-                  <h4 class="faq-heading">
-                    What training is provided for new users?
-                  </h4>
-                  <div class="faq-content">
-                    We offer comprehensive training materials, tutorials, and
-                    live support sessions to ensure you and your team are
-                    confident and proficient in using Contractor Wallet.
-                  </div>
-                </div>
-                <!-- faq item ends -->
-
-                <!-- faq item starts -->
-                <div class="faq-item">
-                  <h4 class="faq-heading">
-                    How secure is my data with Contractor Wallet?
-                  </h4>
-                  <div class="faq-content">
-                    Security is our top priority. Contractor Wallet employs
-                    robust encryption measures and follows industry best
-                    practices to safeguard your data. We prioritize your privacy
-                    and adhere to stringent data protection standards.
-                  </div>
-                </div>
-                <!-- faq item ends -->
-
-                <!-- faq item starts -->
-                <div class="faq-item">
-                  <h4 class="faq-heading">
-                    What is the pricing structure for Contractor Wallet?
-                  </h4>
-                  <div class="faq-content">
-                    Our pricing is based on a subscription model. Please visit
-                    our Pricing page for detailed information on plans and
-                    features.
-                  </div>
-                </div>
-                <!-- faq item ends -->
-
-                <!-- faq item starts -->
-                <div class="faq-item">
-                  <h4 class="faq-heading">
-                    What support options are available?
-                  </h4>
-                  <div class="faq-content">
-                    We provide various support channels, including email
-                    support, live chat, and a comprehensive knowledge base. Our
-                    support team is dedicated to ensuring you have a smooth
-                    experience with Contractor Wallet.
-                  </div>
-                </div>
-                <!-- faq item ends -->
+              <div class="col-12 col-md-7 text-center dtr-py-50 dtr-px-60">
+                <h3 class="color-blue">Get started with CoWallet</h3>
+                <p class="text-size-md">
+                  Ready to Transform Your Construction Management? Explore
+                  Contractor Wallet Today!
+                </p>
+                <a href="https://wa.me/917907707474" target="_blank" class="dtr-btn btn-blue dtr-mt-20">Book a demo</a>
               </div>
               <!-- column 2 ends -->
             </div>
-            <!-- row 1 ends -->
-
-            <!-- row 2 starts -->
-            <div
-              class="dtr-cta-box dtr-rounded-corner-xl dtr-shadow dtr-mt-50 bg-white"
-            >
-              <div class="row d-flex">
-                <!-- column 1 starts -->
-                <div class="col-12 col-md-5 align-self-end">
-                  <img src="images/footer3d.png" alt="image" />
-                </div>
-                <!-- column 1 ends -->
-                <!-- column 2 starts -->
-                <div class="col-12 col-md-7 text-center dtr-py-50 dtr-px-60">
-                  <h3 class="color-blue">Get started with CoWallet</h3>
-                  <p class="text-size-md">
-                    Ready to Transform Your Construction Management? Explore
-                    Contractor Wallet Today!
-                  </p>
-                  <a
-                    href="https://wa.me/917907707474"
-                    target="_blank"
-                    class="dtr-btn btn-blue dtr-mt-20"
-                    >Book a demo</a
-                  >
-                </div>
-                <!-- column 2 ends -->
-              </div>
-            </div>
-            <!-- row 2 ends -->
           </div>
-        </section>
-        <!-- faq section ends
+          <!-- row 2 ends -->
+        </div>
+      </section>
+      <!-- faq section ends
 ================================================== -->
 
-        <!-- footer section starts
+      <!-- footer section starts
 ================================================== -->
-        <footer
-          id="dtr-footer"
-          class="dtr-section-with-bg"
-          style="background-image: url(images/footer-bg.png)"
-        >
-          <div class="container">
-            <div class="row">
-              <!-- column 1 starts -->
-              <!-- <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
+      <footer id="dtr-footer" class="dtr-section-with-bg" style="background-image: url(images/footer-bg.png)">
+        <div class="container">
+          <div class="row">
+            <!-- column 1 starts -->
+            <!-- <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
                 <a href="index.html" class="d-block dtr-mb-15"
                   ><img
                     src="images/cowallet-logo.png"
@@ -931,107 +803,93 @@
                     style="width: 200px"
                 /></a>
               </div> -->
-              <!-- column 1 ends -->
+            <!-- column 1 ends -->
 
-              <!-- column 2 starts -->
-              <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
-                <h4 class="color-blue">Company</h4>
-                <ul class="dtr-list-simple">
-                  <li><a href="/" class="dtr-styled-link">Home</a></li>
-                  <li><a href="#" class="dtr-styled-link">About Us</a></li>
-                  <li><a href="#" class="dtr-styled-link">Careers</a></li>
-                  <li><a href="#" class="dtr-styled-link">Contact</a></li>
-                </ul>
-              </div>
-              <!-- column 2 ends -->
+            <!-- column 2 starts -->
+            <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
+              <h4 class="color-blue">Company</h4>
+              <ul class="dtr-list-simple">
+                <li><a href="/" class="dtr-styled-link">Home</a></li>
+                <li><a href="#" class="dtr-styled-link">About Us</a></li>
+                <li><a href="#" class="dtr-styled-link">Careers</a></li>
+                <li><a href="#" class="dtr-styled-link">Contact</a></li>
+              </ul>
+            </div>
+            <!-- column 2 ends -->
 
-              <!-- column 3 starts -->
-              <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
-                <h4 class="color-blue">Contact Info</h4>
-                <ul class="dtr-list-simple">
-                  <li><a href="tel:+917907707474">+91 79077 07474</a></li>
+            <!-- column 3 starts -->
+            <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
+              <h4 class="color-blue">Contact Info</h4>
+              <ul class="dtr-list-simple">
+                <li><a href="tel:+917907707474">+91 79077 07474</a></li>
+                <li>
+                  <a href="mailto:ajfuturedevelopment@gmail.com">
+                    ajfuturedevelopment@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ajfuture.in/" target="_blank" rel="noreferrer noopener">ajfuture.in</a>
+                </li>
+              </ul>
+            </div>
+            <!-- column 3 ends -->
+
+            <!-- column 4 starts -->
+            <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
+              <h4 class="color-blue">Office Address</h4>
+              <p>AJ Future Development LLP,</p>
+              <p>Malappuram, Kerala</p>
+              <div class="dtr-social-large">
+                <ul class="dtr-social dtr-social-list color-white-muted-alt accent-color-hover text-center">
                   <li>
-                    <a href="mailto:ajfuturedevelopment@gmail.com">
-                      ajfuturedevelopment@gmail.com
-                    </a>
+                    <a href="https://www.instagram.com/contractorwallet/" class="dtr-instagram" target="_blank"
+                      title="twitter"></a>
                   </li>
                   <li>
-                    <a
-                      href="https://ajfuture.in/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >ajfuture.in</a
-                    >
+                    <a href="https://www.facebook.com/profile.php?id=100092007300530" class="dtr-facebook"
+                      target="_blank" title="facebook"></a>
                   </li>
                 </ul>
               </div>
-              <!-- column 3 ends -->
-
-              <!-- column 4 starts -->
-              <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
-                <h4 class="color-blue">Office Address</h4>
-                <p>AJ Future Development LLP,</p>
-                <p>Malappuram, Kerala</p>
-                <div class="dtr-social-large">
-                  <ul
-                    class="dtr-social dtr-social-list color-white-muted-alt accent-color-hover text-center"
-                  >
-                    <li>
-                      <a
-                        href="https://www.instagram.com/contractorwallet/"
-                        class="dtr-instagram"
-                        target="_blank"
-                        title="twitter"
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.facebook.com/profile.php?id=100092007300530"
-                        class="dtr-facebook"
-                        target="_blank"
-                        title="facebook"
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- column 4 ends -->
             </div>
-
-            <!-- copyright section starts -->
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                &copy;
-                <span id="copyright">
-                  <script>
-                    document
-                      .getElementById("copyright")
-                      .appendChild(
-                        document.createTextNode(new Date().getFullYear())
-                      );
-                  </script>
-                </span>
-
-                <span>
-                  <a href="https://ajfuture.in/" target="_blank"> AJ Future </a>
-                  Developement LLP
-                </span>
-              </div>
-            </div>
-            <!-- copyright section ends -->
+            <!-- column 4 ends -->
           </div>
-        </footer>
-        <!-- footer section ends
-================================================== -->
-      </div>
-      <!-- == main content area ends == -->
-    </div>
-    <!-- #dtr-wrapper ends -->
 
-    <!-- JS FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+          <!-- copyright section starts -->
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              &copy;
+              <span id="copyright">
+                <script>
+                  document
+                    .getElementById("copyright")
+                    .appendChild(
+                      document.createTextNode(new Date().getFullYear())
+                    );
+                </script>
+              </span>
+
+              <span>
+                <a href="https://ajfuture.in/" target="_blank"> AJ Future </a>
+                Developement LLP
+              </span>
+            </div>
+          </div>
+          <!-- copyright section ends -->
+        </div>
+      </footer>
+      <!-- footer section ends
+================================================== -->
+    </div>
+    <!-- == main content area ends == -->
+  </div>
+  <!-- #dtr-wrapper ends -->
+
+  <!-- JS FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
 </html>
